@@ -5,6 +5,10 @@ class Mover {
         this.acc = createVector(0,0.1); 
         this.w = 20;
     }
+    
+    applyForce(force) {
+        this.acc = force;
+    }
 
     update() {
         this.vel.add(this.acc);

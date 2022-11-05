@@ -11,6 +11,9 @@ function setup() {
 function draw() {
   background(0);
 
+  let gravity = createVector(0,0.1);
+
+  mover.applyForce(gravity)
   mover.update();
   mover.show();
   mover.edge();
