@@ -1,4 +1,4 @@
-class Mover() {
+class Mover {
     constructor(x,y) {
         this.pos = createVector(x,y);
         this.vel = createVector(0,0);
@@ -12,6 +12,6 @@ class Mover() {
     }
 
     show() {
-        elipse(this.pos.x,this.pos.y, this.w);
+        ellipse(this.pos.x,this.pos.y, this.w);
     }
 }
