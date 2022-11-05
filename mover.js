@@ -13,7 +13,7 @@ class Mover {
 
     edge() {
         if (this.pos.x > height) {
-            this.vel *= -1;
+            this.vel.y *= -1;
             this.pos.y = height;    
         }
     }
