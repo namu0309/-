@@ -11,6 +11,13 @@ class Mover {
         this.pos.add(this.vel);
     }
 
+    edge() {
+        if (this.pos.x > height) {
+            this.vel *= -1;
+            this.pos.y = height;    
+        }
+    }
+
     show() {
         ellipse(this.pos.x,this.pos.y, this.w);
     }
