@@ -13,4 +13,5 @@ function draw() {
 
   mover.update;
   mover.show;
+  mover.edge;
 }
